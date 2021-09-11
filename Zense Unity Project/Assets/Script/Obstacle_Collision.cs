@@ -19,10 +19,8 @@ public class Obstacle_Collision : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        
+        Destroy(collision.gameObject); // Destroy Player if collides with virus
 
-        else if(collision.tag == "Player")
-        {
-            Destroy(player.gameObject);
-        }
     }
 }

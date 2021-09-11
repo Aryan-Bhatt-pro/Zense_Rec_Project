@@ -13,7 +13,6 @@ public class ScoreManage : MonoBehaviour
         if(GameObject.FindGameObjectWithTag("Player") != null)
         {
             score += 1*Time.deltaTime;
-            //printf('%d', score);
             ScoreText.text = ((int)(score)).ToString();
         }
     }
